@@ -134,17 +134,7 @@ Gemini API 응답 실패 및 Timeout 상황 대응을 위해
 
 - 최대 3회 Retry
 - Main/Sub 모델 Fallback
-- 최종 실패 시 베스트셀러 추천
-
-```python
-for current_model in model_lineup:
-    for attempt in range(max_attempt):
-        try:
-            ai_result = gemini.analyze()
-            break
-        except Exception:
-            time.sleep(2)
-```
+- 최종 실패 시 향수 추천만 출력
 
 ### 결과
 
